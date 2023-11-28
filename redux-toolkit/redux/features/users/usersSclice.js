@@ -18,8 +18,8 @@ const usersSlice = createSlice({
         builder.addCase(fetchUsers.pending,(state)=>{
             state.loading = true;
         });
-        builder.addCase(fetchUsers.fullfilled,(state,action)=>{
-            stat.loading = false;
+        builder.addCase(fetchUsers.fulfilled,(state,action)=>{
+            state.loading = false;
             state.users = action.payload;
             state.error = "";
         });
