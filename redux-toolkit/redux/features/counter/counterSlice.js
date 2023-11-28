@@ -24,4 +24,4 @@ export default counterSlice.reducer;
 export const { increment, decrement, increamentByAmount } =
   counterSlice.actions;
 
-  export const selectCounter = store =>store=>store.counter.counter;
+  export const selectCounter = store =>store.counter.counter;
